@@ -1,0 +1,68 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #004080;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Main Title */
+main h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #004080;
+}
+
+/* Temple Image */
+picture img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Sections */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+section p,
+section ul {
+    margin-bottom: 10px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
