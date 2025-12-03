@@ -45,5 +45,6 @@
   "liveServer.settings.port": 5504,
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
-  }
+  },
+  "chat.disableAIFeatures": true
 }
