@@ -1,9 +1,16 @@
 :root {
     --primary-color: #055a05;
     --secondary-color: #0a8a0a;
-    --accent-color: #e9c46a;
-    --heading-font: Cambria, Cochin, Georgia, "Time New Roman", Times, serif;
+    --accent1-color: #e9c46a;
+    --accent2-color: #e9c46a;
+    --heading-color: #333333;
+    --body-color: #1a1818: --heading-font: Cambria, Cochin, Georgia, "Time New Roman", Times, serif;
     --body-font: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 * {
@@ -12,14 +19,9 @@
     padding: 0;
 }
 
-header {
-    background-color: var (--primary-color);
-    color: var(--accent-color);
-}
-
 body {
     font-family: var(--body-font);
-    color: var(--accent-color);
+    color: var(--body-color);
 }
 
 header,
@@ -32,19 +34,28 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--heading-color);
 }
 
 nav,
 p,
 section,
 article {
-    margin: 16px;
-    padding: 8px;
+    margin: 1rem;
+    padding: 5rem;
 }
 
 Socialmedia a {
     text-decoration: none;
+}
+
+.socialmedia a {
+    width: 4rem;
+    height: 4rem;
+}
+
+.hero {
+    position: relative;
 }
 
 hero img {
@@ -53,18 +64,30 @@ hero img {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
-    top: 20%;
+    top: 4rem;
     width: 100%;
-    padding: 16px;
+    padding: 1rem;
     text-align: center;
-    opacity: o.7;
-    background-color: var(--accent-color);
-    color: ffffff;
+    opacity: 0, 7;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+.hero article {
+    position: absolute;
+    bottom: 2rem;
+    top: 8rem;
+    left: 1rem;
+    right: 1rem;
+    background-color: var(--accent1-color);
+    border: 2px solid var(--secondary-color);
+    margin-bottom: 2rem;
 }
 
 hero article img {
     float: right;
     width: 125px;
+    margin: 000 1rem;
 }
