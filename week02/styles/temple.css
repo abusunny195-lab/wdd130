@@ -34,15 +34,15 @@ h2 {
 img {
     width: 100%;
     height: auto;
-    box-shadow: 00 30px black;
+    box-shadow: 0 0 rgb(0, 0, 0, .5);
 }
 
 section {
     margin: 20px 0;
-    border: 1px rgb(0 0 0 /10%);
+    border: 1px solid rgb(0 0 0 / 10%);
     padding: 10px;
     background-color: #aba;
-    font-size: 9rem;
+    font-size: 1rem;
 }
 
 section p {
@@ -50,9 +50,9 @@ section p {
 }
 
 ul {
-    margin-right: 10px 20px 0;
+    margin: 10px 20px 0;
 }
 
 footer {
-    font-size: 9rem;
+    font-size: 1rem;
 }
