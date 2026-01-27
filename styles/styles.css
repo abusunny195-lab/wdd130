@@ -1,7 +1,28 @@
+:root {
+    --primary-color: steelblue;
+    --secondary-color: #ffffff;
+    --accent-color: #0a3d62;
+    --text-dark: #000000;
+    --text-light: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.hero h1 {
+    color: var(--text-light);
 }
 
 nav {
@@ -40,6 +61,12 @@ nav a {
     max-width: 400px;
 }
 
+.hero article img {
+    float: right;
+    margin-left: 1rem;
+    max-width: 150px;
+}
+
 main {
     max-width: 640px;
 }
@@ -76,11 +103,18 @@ aside h2 {
     left: 150px;
 }
 
+footer a {
+    text-decoration: none;
+}
 
 footer {
     margin: 1em;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
 
 /* class selectors */
