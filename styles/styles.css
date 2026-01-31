@@ -1,41 +1,52 @@
 :root {
     --primary-color: steelblue;
     --secondary-color: #ffffff;
-    --accent-color: #0a3d62;
     --text-dark: #000000;
     --text-light: #ffffff;
 }
 
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Layout */
+body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
 header {
+    grid-column: 1 / -1;
     background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header img {
+    width: 80px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
 }
 
 nav a {
     color: var(--text-light);
     text-decoration: none;
+    padding: 0.5rem 1rem;
 }
 
-.hero h1 {
-    color: var(--text-light);
-}
-
-nav {
-    background-color: steelblue;
-    padding: 10;
-}
-
-nav a {
-    color: white;
-    padding: 10px;
-    display: block;
-}
-
+/* Hero Section */
 .hero {
     position: relative;
 }
@@ -63,33 +74,23 @@ nav a {
 
 .hero article img {
     float: right;
+    width: 150px;
     margin-left: 1rem;
-    max-width: 150px;
 }
 
+/* Main */
 main {
     max-width: 640px;
-}
-
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    float: right;
-    margin: 0 0 1rem 1rem;
-}
-
-
-aside {
-    width: 20em;
-    text-align: center;
-    position: relative;
+    margin: 0 auto;
 }
 
 p {
-    margin: 1rem;
+    margin: 1rem 0;
+}
+
+/* Aside */
+aside {
+    text-align: center;
 }
 
 aside img {
@@ -97,34 +98,18 @@ aside img {
     height: auto;
 }
 
-aside h2 {
-    position: absolute;
-    top: 67px;
-    left: 150px;
-}
-
-footer a {
-    text-decoration: none;
-}
-
-footer {
-    margin: 1em;
-    border-top: 1px solid #000;
-    text-align: center;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-/* class selectors */
+/* Reusable Box */
 .box {
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #eee;
-    color: #000;
 }
 
-.indent {
-    margin-left: 1rem;
+/* Footer */
+footer {
+    grid-column: 1 / -1;
+    border-top: 1px solid #000;
+    text-align: center;
+    margin: 1rem;
 }
