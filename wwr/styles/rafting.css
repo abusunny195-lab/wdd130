@@ -4,13 +4,37 @@
     --accent1-color: #e9c46a;
     --accent2-color: #e9c46a;
     --heading-color: #333333;
-    --body-color: #1a1818: --heading-font: Cambria, Cochin, Georgia, "Time New Roman", Times, serif;
+    --body-color: #1a1818;
+    --heading-font: Cambria, Cochin, Georgia, "Times New Roman", Times, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: var(--accent1-color);
+.site-header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    padding: 1rem;
+    background-color: #1b4965;
+}
+
+.site-header img {
+    max-width: 150px;
+}
+
+.site-header nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+.site-header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.site-header nav a:hover {
+    text-decoration: underline;
 }
 
 * {
@@ -31,6 +55,40 @@ footer {
     margin: 0 auto;
 }
 
+.history {
+    padding: 2rem;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.history-content img {
+    max-width: 200px;
+}
+
+.adventures {
+    padding: 2rem;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.adventure-gallery figure {
+    text-align: center;
+}
+
+.adventure-gallery img {
+    max-width: 100%;
+    height: auto;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -42,23 +100,18 @@ p,
 section,
 article {
     margin: 1rem;
-    padding: 5rem;
+    padding: 1rem;
 }
 
 Socialmedia a {
     text-decoration: none;
 }
 
-.socialmedia a {
-    width: 4rem;
-    height: 4rem;
-}
-
 .hero {
     position: relative;
 }
 
-hero img {
+.hero img {
     display: block;
     width: 100%;
     height: auto;
@@ -70,7 +123,7 @@ hero img {
     width: 100%;
     padding: 1rem;
     text-align: center;
-    opacity: 0, 7;
+    opacity: 0. 7;
     background-color: var(--secondary-color);
     color: var(--accent1-color);
 }
@@ -86,8 +139,26 @@ hero img {
     margin-bottom: 2rem;
 }
 
-hero article img {
+.hero article img {
     float: right;
     width: 125px;
-    margin: 000 1rem;
+    margin: 0 1rem;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #1b4965;
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links img {
+    width: 30px;
 }
