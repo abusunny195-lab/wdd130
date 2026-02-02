@@ -39,8 +39,8 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 1.55%;
+    padding: 1.%;
 }
 
 body {
@@ -51,7 +51,7 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    width: 1.55px;
     margin: 0 auto;
 }
 
