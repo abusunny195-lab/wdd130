@@ -1,62 +1,76 @@
-<!--20/01/2026-->
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abu Sunday | WDD 130</title>
     <meta name="description"
-        content="Abu Sunday WDD 130 home page at BYU-Idaho showcasing web development projects, assignment, and Learning progress.">
-    <meta name="author" content="Abu Sunday">
-    <link rel="stylesheet" href="styles/styles.css">
+        content="Experience thrilling white water rafting adventures with our professional guides. Book your unforgettable rafting trip today.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | White Water Rafting Adventures</title>
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-    <header>
-        <img src="images/logo.png" alt="Site Logo">
 
+    <header class="site-header">
+        <img src="images/logo.png" alt="Rafting Company Logo">
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
-
     <main>
-        <div class="hero">
-            <img src="images/hero.jpg" alt="Hero image">
-            <h1>Abu Sunday</h1>
 
-
-            <article>
-                <img src="images/profile.jpg" alt="Profile image">
-                <p>My name is Abu Sunday. I am a student of WDD 130, learning web
-                    development and building skills in HTML and CSS. I enjoy learning new
-                    technologies and growing step by step as a web developer.
-                </p>
-            </article>
-        </div>
-
-        <section class="box">
-            <h2>About Me</h2>
-            <p>I am passionate about technology and education. This course is helping
-                me understand how websites are structured and styled using modern web
-                standards.</p>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Rafting Adventure">
+            <h1>Adventure Awaits on the Rapids!</h1>
         </section>
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter">
+            <h2>Join Our Adventure Newsletter</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="cta">
+            <h2>Ready for the Experience of a Lifetime?</h2>
+            <a href="trips.html" class="btn">Explore Our Trips</a>
+        </section>
+
+        <!-- GRID CONTENT SECTION -->
+        <section class="home-grid">
+            <div>
+                <img src="images/rafting1.jpg" alt="Family Rafting">
+                <h3>Family Adventures</h3>
+                <p>Safe and fun rafting experiences designed for families and beginners.</p>
+            </div>
+
+            <div>
+                <img src="images/rafting2.jpg" alt="Extreme Rapids">
+                <h3>Extreme Rapids</h3>
+                <p>High-adrenaline trips for thrill seekers ready to conquer powerful rapids.</p>
+            </div>
+        </section>
+
     </main>
 
-    <aside class="box">
-        <h2>Nigeria</h2>
-        <img src="images/aside.jpg" alt="Aside image">
-        <p>Nigeria is a country rich in culture, diversity, and innovation. I am
-            proud to be learning and growing from here.</p>
-    </aside>
-
-    <footer>
-        <p>©2026 🌍 Abu Sunday | WDD 130</p>
+    <footer class="site-footer">
+        <p>&copy; 2026 White Water Rafting Adventures | Abu Sunday</p>
     </footer>
+
 </body>
 
 </html>
