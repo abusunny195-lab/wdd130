@@ -1,0 +1,82 @@
+header,
+main,
+footer {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 1rem;
+}
+
+.hero {
+position: relative;
+}
+
+.hero img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.hero h1 {
+position: absolute;
+top: 40%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: white;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 1rem;
+}
+
+.home-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 2rem;
+padding: 2rem 0;
+}
+
+.home-grid img {
+width: 100%;
+border-radius: 8px;
+}
+
+.newsletter form {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+.newsletter {
+text-align: center;
+padding: 2rem 0;
+}
+
+.newsletter input {
+padding: 8px;
+margin: 5px;
+}
+
+.socialmedia {
+display: flex;
+gap: 1rem;
+}
+
+.cta {
+text-align: center;
+padding: 2rem 0;
+}
+
+.btn {
+display: inline-block;
+padding: 10px 20px;
+background-color: #055a05;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+.home-grid {
+grid-template-columns: 1fr;
+}
+}
